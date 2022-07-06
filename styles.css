@@ -271,7 +271,7 @@ td:hover {
     width: 100px;
     height: 100px;
     display: inline-block;
-    animation: bounceIndown 0.5s 1;
+    animation: bounceIndown 0.6s 1;
 }
 
 .joueur1 {
@@ -282,7 +282,6 @@ td:hover {
 .joueur2 {
     background: url(jeton.png);
     background-color: #3c5772;
-    animation: bounceIndown 0.3s ease-in-out;
 }
 
 @keyframes bounceIndown {
