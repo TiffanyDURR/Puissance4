@@ -1,6 +1,6 @@
 var joueur = 1; // Numéro du joueur qui joue.
-var colonne = 5;
-var ligne = 5;
+var colonne = 7;
+var ligne = 6;
 var cercles = document.querySelectorAll(".fas");
 var game = true; // Partie en cours.
 var texte = ""; // Texte qui s'affiche.
@@ -149,7 +149,7 @@ function Puissance4(lig, col, l, c) {
       Puissance4(lig - 1, col + 1, -1, 1) +
       Puissance4(lig + 1, col - 1, 1, -1);
     console.log(va, vb, vc, vd);
-    if (va == 4 || vb == 4 || vc == 4 || vd == 4) return true;
+    if (va >= 4 || vb >= 4 || vc >= 4 || vd >= 4) return true;
     else return false;
   }
   // Vérification "lig" et "col" (ne sortent pas du tableau).
