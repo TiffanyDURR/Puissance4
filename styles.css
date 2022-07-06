@@ -1,0 +1,239 @@
+* {
+    font-family: 'Arima', cursive;
+}
+
+input:focus, input:active, button:focus, button:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+#TexteAnnonce {
+    text-align: center;
+color: #ab9f89;
+}
+
+
+input#nom1:focus {
+    border: 4px solid #703048;
+}
+
+input#nom2:focus {
+    border: 4px solid #3c5772;
+}
+
+.app-header {
+    background-color: #f0e8da;
+    padding-top: 34px;
+    text-align: center;
+    border-radius: 60px 60px 0px 0px;
+}
+
+form {
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 20px;
+}
+form input {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+background-color: #e5ddcf;
+border: 4px solid #e5ddcf;
+color: #938978;
+padding: 12px;
+padding-left: 18px;
+padding-right: 18px;
+box-shadow: 0px;
+font-weight: 600;
+font-size: 16px;
+width: 180px;
+margin-left: 4px;
+margin-right: 4px;
+}
+
+button {
+    background-color: #703048;
+    border: 1px solid #703048;
+    letter-spacing: 1px;
+    color: #f0e8da;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    cursor: pointer;
+    margin-left: 4px;
+    width: 226px;
+}
+
+button:hover {
+    transition: 0.3s ease-in-out;
+    background-color: #3c5772;
+    border: 1px solid #3c5772;
+}
+
+.box-names h1 {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 34px;
+    color: #8f8677;
+}
+
+.win {
+    color: #8f8677;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#ChampBouton {
+    background-color: #f0e8da;
+    text-align: center;
+    padding-bottom: 32px;
+    padding-top: 12px;
+    margin-bottom: 32px;
+}
+
+
+#TexteAnnonce span, .letsgo {
+    color: #8f8677;
+    font-size: 28px;
+font-weight: 700;
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app {
+width: 842px;
+height: 738px;
+border-left: 100px solid #f0e8da;
+border-right: 100px solid #f0e8da;
+border-radius: 0px 0px 0px 0px;
+background-color: rgb(255, 255, 255, 0.8);
+}
+
+.red {
+    background: url(jeton2.png);
+    background-size: cover;
+    background-color: #703048;
+    border-radius: 50%;
+    color: rgb(112, 48, 72, 0);
+}
+
+.blue {
+    background: url(jeton2.png);
+    background-size: cover;
+    background-color: #3c5772;
+    border-radius: 50%;
+    color: rgb(60, 87, 114, 0);
+}
+
+#TexteAnnonce {
+    background-color: #f0e8da;
+    
+        color: #8f8677;
+        font-size: 20px;
+        font-weight: 600;
+    
+}
+body {
+    background: url(background2.jpg);
+}
+
+table {
+    background: url(back.png);
+    border: 20px solid #f0e8da;
+    border-radius: 0px 0px 0px 0px;
+}
+
+
+.test {
+    display: none;
+}
+header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.logo2 {
+    display: none;
+}
+
+.logo1, .logo2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin: 6px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+td:hover {
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background: url(jeton2.png);
+    background-color: rgb(240, 232, 218, 0.4);
+}
+
+
+.joueur1, .joueur2 {
+    border-radius: 50px 50px 50px 50px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    animation: bounceIndown 0.5s 1;
+}
+
+.joueur1 {
+    background: url(jeton.png);
+    background-color:#703048;
+}
+
+.joueur2 {
+    background: url(jeton.png);
+    background-color: #3c5772;
+    animation: bounceIndown 0.3s ease-in-out;
+}
+
+@keyframes bounceIndown {
+    0%, 60%, 75%, 90%, 100% {
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+opacity: 0;
+transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, 0px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0px, 0);
+    }
+}
+
+
+
