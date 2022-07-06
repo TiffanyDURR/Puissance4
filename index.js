@@ -5,6 +5,7 @@ var cercles = document.querySelectorAll(".fas");
 var game = true; // Partie en cours.
 var texte = ""; // Texte qui s'affiche.
 var plateau = new Array();
+let tour = 0;
 // Deuxième dimension du tableau.
 for (var i = 0; i < ligne; i++) plateau[i] = new Array();
 const logo1 = document.querySelector(".logo1");
@@ -14,9 +15,10 @@ const nom1 = document.getElementById("nom1");
 const nom2 = document.getElementById("nom2");
 const inputs = document.querySelectorAll(`input[type="text"]`);
 const boxNames = document.querySelector(".box-names");
+const nouvellePartie = document.querySelector(".nouvelle-partie");
 let prenom1 = "";
 let prenom2 = "";
-
+const boxNamesHeader = document.querySelector(".box-names-container");
 // Création nouveau jeu.
 newGame();
 
@@ -49,16 +51,18 @@ function detectClic(j) {
     if (verifEnd) {
       this.game = false;
       afficheTexteAnnonce(
-        `<div class="win">Partie gagnée pour</div><span> ${nomDuJoueur(
-          this.joueur
-        )} </span>`
+        `<div class="win"> ${nomDuJoueur(this.joueur)} <br>a gagné !</div>`
       );
       console.log("END OF GAME !");
     }
     // Si partie non terminée, passe au joueur qui suit.
-    else {
+    else if (tour == 42) {
+      afficheTexteAnnonce(
+        `<div class="win">Match nul ! <i class="far fa-grin-beam-sweat"></i></win>`
+      );
+    } else {
       this.joueur == 1 ? (this.joueur = 2) : (this.joueur = 1);
-      afficheTexteAnnonce("A ton tour " + nomDuJoueur(this.joueur) + " !");
+      afficheTexteAnnonce("Au tour de  " + nomDuJoueur(this.joueur));
     }
   }
 }
@@ -77,6 +81,8 @@ function poseJeton(j) {
       this.plateau[i][j] = this.joueur;
       // Met à jour la div avec le jeton.
       refreshTableau(i, j, this.joueur);
+      tour++;
+      console.log(tour);
       return i;
     }
   }
@@ -113,12 +119,13 @@ function newGame() {
   }
   this.joueur = 1;
   afficheTexteAnnonce(
-    `<div class="letsgo">Let's go ! </div>A ton tour ${nomDuJoueur(
+    `<div class="letsgo">Let's go ! </div>Au tour de ${nomDuJoueur(
       this.joueur
     )} !`
   );
   this.game = true;
   creerTableau();
+  tour = 0;
 }
 
 function afficheTexteAnnonce(texte) {
@@ -177,4 +184,11 @@ form.addEventListener("submit", (e) => {
     <h1><i class="fas fa-circle blue"> </i> ${prenom2}</h4>
     `;
   form.style.display = "none";
+  boxNamesHeader.style.display = "block";
+});
+
+nouvellePartie.addEventListener("click", () => {
+  location.reload();
+  prenom1 = "";
+  prenom2 = "";
 });

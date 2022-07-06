@@ -1,121 +1,246 @@
-* {
-    font-family: 'Arima', cursive;
+ /* GENERAL ------------------------------------------------------------------------------------------------------------------------------------- */
+
+ body, html {
+    padding: 0px;
+    margin: 0px;
 }
 
-input:focus, input:active, button:focus, button:active {
+body {
+    background: url(background2.jpg);
+    color: #a1a38d;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+* {
+    font-family: 'Arima', cursive;
+    box-sizing: border-box;
+}
+
+footer {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+ /* MEP ASIDE CONTAINER ------------------------------------------------------------------------------------------------------------------------------------- */
+
+ aside {
+    border-radius: 30px 30px 0px 0px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 30px;
+    margin-right: 40px;
+    width: 336px;
+    background-color: #f0e8da;
+    padding-bottom: 60px;
+    border-bottom: 8px solid #e5ddcf;
+  }
+
+
+ #TexteAnnonce {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #e5ddcf;
+}
+
+form {
+}
+
+.box-names-container {
+    padding-top: 20px;
+}
+
+.box-names h1 {
+
+    font-size: 18px;
+}
+
+.box-names {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #e5ddcf;
+    padding-bottom: 20px;
+}
+
+.regles {
+
+}
+
+
+.ChampBouton {
+
+}
+
+
+
+ /* ASIDE ------------------------------------------------------------------------------------------------------------------------------------- */
+
+ input:focus, input:active, button:focus, button:active {
     border: none;
     outline: none;
     box-shadow: none;
 }
 
-#TexteAnnonce {
-    text-align: center;
-color: #ab9f89;
-}
 
 
-input#nom1:focus {
-    border: 4px solid #703048;
-}
-
-input#nom2:focus {
-    border: 4px solid #3c5772;
-}
-
-.app-header {
-    background-color: #f0e8da;
-    padding-top: 34px;
-    text-align: center;
-    border-radius: 60px 60px 0px 0px;
-}
-
-form {
-    margin-top: 40px;
-    text-align: center;
-    margin-right: 20px;
-}
 form input {
     display: block;
     margin-top: 12px;
     margin-bottom: 12px;
-background-color: #e5ddcf;
-border: 4px solid #e5ddcf;
-color: #938978;
-padding: 12px;
-padding-left: 18px;
-padding-right: 18px;
-box-shadow: 0px;
-font-weight: 600;
-font-size: 16px;
-width: 180px;
-margin-left: 4px;
-margin-right: 4px;
-}
-
-button {
-    background-color: #703048;
-    border: 1px solid #703048;
-    letter-spacing: 1px;
-    color: #f0e8da;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 16px;
+    background-color: #f6efe3;
+    border: 1px solid #f6efe3;
+    color: #a1a38d;
     padding: 12px;
     padding-left: 18px;
     padding-right: 18px;
-    cursor: pointer;
-    margin-left: 4px;
-    width: 226px;
-}
-
-button:hover {
-    transition: 0.3s ease-in-out;
-    background-color: #3c5772;
-    border: 1px solid #3c5772;
-}
-
-.box-names h1 {
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 34px;
-    color: #8f8677;
-}
-
-.win {
-    color: #8f8677;
-    font-size: 20px;
+    box-shadow: 0px;
     font-weight: 600;
+    font-size: 16px;
+    }
+
+    input#nom1:focus {
+        border: 1px solid #e5ddcf;
+    }
+    
+    input#nom2:focus {
+        border: 1px solid #e5ddcf;
+    }
+
+    button {
+        background-color: #d3ab9f;
+        border: 0px solid #d3ab9f;
+        letter-spacing: 1px;
+        color: #f0e8da;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 12px;
+        padding-left: 18px;
+        padding-right: 18px;
+        cursor: pointer;
+        margin-left: 4px;
+        width: 100%;
+        margin-left: 0px;
+    } 
+
+    .reinit, .nouvelle-partie {
+        background-color: #d3ab9f;
+        border: 1px solid #d3ab9f;
+        letter-spacing: 1px;
+        color: #f0e8da;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 12px;
+        padding-left: 18px;
+        padding-right: 18px;
+        cursor: pointer;
+        margin-left: 4px;
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .regles p {
+        text-align: justify;
+    }
+
+    .box-names-container {
+        display: none;
+    }
+
+
+
+ /* PAGE HEADER ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.logo2 {
+    display: none;
 }
 
-#ChampBouton {
-    background-color: #f0e8da;
-    text-align: center;
-    padding-bottom: 32px;
-    padding-top: 12px;
-    margin-bottom: 32px;
+.app-header {
+    display: flex;
+justify-content: center;
+align-items: center;
+border-top: 40px solid #f0e8da;
+border-radius: 60px 60px 0px 0px;
+padding-bottom: 20px;
+background-color: #f0e8da;
 }
+ /* APP ------------------------------------------------------------------------------------------------------------------------------------- */
 
+  /* App Container */
 
-#TexteAnnonce span, .letsgo {
-    color: #8f8677;
-    font-size: 28px;
-font-weight: 700;
-}
-
-.app-container {
+  .app-container {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.app {
-border-left: 100px solid #f0e8da;
-border-right: 100px solid #f0e8da;
-border-radius: 0px 0px 0px 0px;
-background-color: rgb(255, 255, 255, 0.8);
+  }
+
+  
+  /* Text content */
+
+
+
+.win {
+    font-size: 48px;
+    font-weight: 600;
+    padding-top: 16px;
+    }
+    
+    #TexteAnnonce span, .letsgo {
+    font-size: 28px;
+    font-weight: 700;
+    }
+
+
+ /* Tableau */
+
+ table {
+    background: url(back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-left: 60px solid #f0e8da;
+    border-right: 60px solid #f0e8da;
+    border-bottom: 60px solid #f0e8da;
+    border-radius: 0px 0px 0px 0px;
 }
 
-.red {
+.ligne {
+    height: 8px;
+    width: 100%;
+    background-color: #e5ddcf;
+}
+
+td {
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin: 7px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+td:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background: url(jeton2.png);
+    background-color: rgb(240, 232, 218, 0.4);
+}
+
+
+    
+ /* Couleurs de <i> */
+
+ .red {
     background: url(jeton2.png);
     background-size: cover;
     background-color: #703048;
@@ -131,61 +256,11 @@ background-color: rgb(255, 255, 255, 0.8);
     color: rgb(60, 87, 114, 0);
 }
 
-#TexteAnnonce {
-    background-color: #f0e8da;
-    
-        color: #8f8677;
-        font-size: 20px;
-        font-weight: 600;
-    
-}
-body {
-    background: url(background2.jpg);
-}
-
-table {
-    background: url(back.png);
-    border: 20px solid #f0e8da;
-    border-radius: 0px 0px 0px 0px;
-}
-
-
-.test {
-    display: none;
-}
-header {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.logo2 {
+.icolor {
     display: none;
 }
 
-.logo1, .logo2 {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-td {
-    display: inline-block;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    margin: 6px;
-    text-align: center;
-    width: 100px;
-    height: 100px;
-}
-
-td:hover {
-
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    background: url(jeton2.png);
-    background-color: rgb(240, 232, 218, 0.4);
-}
-
+/* Rendu des jetons */ 
 
 .joueur1, .joueur2 {
     border-radius: 50px 50px 50px 50px;
@@ -232,6 +307,3 @@ transform: translate3d(0, -3000px, 0);
         transform: translate3d(0, 0px, 0);
     }
 }
-
-
-
