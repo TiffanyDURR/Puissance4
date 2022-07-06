@@ -1,6 +1,6 @@
 var joueur = 1; // Numéro du joueur qui joue.
-var colonne = 7;
-var ligne = 6;
+var colonne = 5;
+var ligne = 5;
 var cercles = document.querySelectorAll(".fas");
 var game = true; // Partie en cours.
 var texte = ""; // Texte qui s'affiche.
