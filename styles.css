@@ -312,3 +312,93 @@ transform: translate3d(0, -3000px, 0);
         transform: translate3d(0, 0px, 0);
     }
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) { 
+    .app-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: 320px;
+    }
+
+    aside {
+        display: block;
+        width: 320px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+
+    .logo1, .logo2 {
+        width: 200px;
+        display: block;
+    }
+
+
+
+
+    
+ table {
+    background: url(back-mobile-001.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    border-left: 4px solid #f0e8da;
+    border-right: 4px solid #f0e8da;
+    border-bottom: 10px solid #f0e8da;
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.ligne {
+    height: 8px;
+    width: 100%;
+    background-color: #e5ddcf;
+}
+
+td {
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin: 2px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+td:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background: url(jeton2.png);
+    background-color: rgb(240, 232, 218, 0.4);
+}
+
+
+.joueur1, .joueur2 {
+    border-radius: 50px 50px 50px 50px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    animation: bounceIndown 0.6s 1;
+}
+
+.joueur1 {
+background-size: cover;
+}
+
+.joueur2 {
+    background-size: cover;
+}
+
+.app-header {
+    display: flex;
+justify-content: center;
+align-items: center;
+border-top: 20px solid #f0e8da;
+border-radius: 20px 20px 0px 0px;
+padding-bottom: 20px;
+background-color: #f0e8da;
+}
+
+}
